@@ -1,0 +1,14 @@
+#!/usr/bin/with-contenv bash
+
+# Directories.
+mkdir -p /factorio
+mkdir -p $SAVES
+mkdir -p $CONFIG
+mkdir -p $MODS
+mkdir -p $SCENARIOS
+mkdir -p $SCRIPTOUTPUT
+
+# Permissions.
+chown -R abc:abc \
+	/opt/factorio \
+    /factorio
