@@ -10,5 +10,11 @@ mkdir -p $SCRIPTOUTPUT
 
 # Permissions.
 chown -R abc:abc \
-	/opt/factorio \
+    /opt/factorio \
     /factorio
+
+chmod g+w $SAVES
+chmod g+w $CONFIG
+chmod g+w $MODS
+chmod g+w $SCENARIOS
+chmod g+w $SCRIPTOUTPUT
