@@ -13,8 +13,4 @@ chown -R abc:abc \
     /opt/factorio \
     /factorio
 
-chmod g+w $SAVES
-chmod g+w $CONFIG
-chmod g+w $MODS
-chmod g+w $SCENARIOS
-chmod g+w $SCRIPTOUTPUT
+chmod g+w /factorio/* -R
