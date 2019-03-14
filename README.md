@@ -25,3 +25,7 @@ sudo docker run -d \
   --restart=always \
   aeonlucid/unraidfactorio
 ```
+
+## Unraid example
+
+![Unraid example](https://i.imgur.com/ybjyNGP.png)
