@@ -3,8 +3,7 @@ FROM lsiobase/ubuntu:xenial
 # Environment.
 ENV PORT=34197 \
     RCON_PORT=27015 \
-    VERSION=0.17.12 \
-    SHA1=5088846835438ddaffdd3244b24163fb7fb5dd06 \
+    VERSION=0.17.14 \
     SAVES=/factorio/saves \
     CONFIG=/factorio/config \
     MODS=/factorio/mods \
@@ -20,7 +19,6 @@ RUN mkdir -p /opt /factorio && \
     echo "**** Downloading Factorio ****" && \
     curl -sSL https://www.factorio.com/get-download/$VERSION/headless/linux64 \
         -o /tmp/factorio_headless_x64_$VERSION.tar.xz && \
-    echo "$SHA1  /tmp/factorio_headless_x64_$VERSION.tar.xz" | sha1sum -c && \
     tar xf /tmp/factorio_headless_x64_$VERSION.tar.xz --directory /opt && \
     chmod ugo=rwx /opt/factorio && \
     rm /tmp/factorio_headless_x64_$VERSION.tar.xz && \
