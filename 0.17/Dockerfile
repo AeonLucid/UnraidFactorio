@@ -3,7 +3,7 @@ FROM lsiobase/ubuntu:xenial
 # Environment.
 ENV PORT=34197 \
     RCON_PORT=27015 \
-    VERSION=0.17.15 \
+    VERSION=0.17.17 \
     SAVES=/factorio/saves \
     CONFIG=/factorio/config \
     MODS=/factorio/mods \
